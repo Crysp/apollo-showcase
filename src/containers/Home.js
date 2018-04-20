@@ -24,4 +24,8 @@ export default graphql(gql`{
         title
         votes
     }
-}`)(Home)
+}`, {
+    options: {
+        fetchPolicy: 'network-only'
+    }
+})(Home)
